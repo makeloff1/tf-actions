@@ -42,3 +42,15 @@ api 経由でないと chatgpt 使えないし作りましょう
 - https://zenn.dev/tmknom/articles/github-apps-token
 - https://developers.bookwalker.jp/entry/2023/03/15/110000
 - https://tech.ginco.io/post/ginco-engineer-meetup-2018-cloud-functions/#cold-start%E3%81%AE%E6%94%B9%E5%96%84
+- https://blog.g-gen.co.jp/entry/using-terraform-via-github-actions
+- https://getbetterdevops.io/google-cloud-functions-with-terraform/
+
+# slack 2nd generation platform
+
+slack deploy だけで typescript をデプロイ可能
+
+- https://api.slack.com/automation/cli/CI-CD-setup
+
+どうやら slack app の trigger がいろいろあるらしい
+その中でも event trigger の app_mensioned を理よすると @myapp とかで workflow がスタートする
+webhook や Link、schedule などもある
