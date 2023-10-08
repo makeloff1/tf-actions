@@ -1,4 +1,15 @@
-# slack からの API 自動化フロー(IF: http/slack/hogehoge/... を slack に集約できる)
+# README
+
+## TODO
+
+- D: actionflow単体
+- D: cloud-fundion(v2) with terraform
+- cloud-run with terraform
+- gke with terraform
+- gke with terraform and actionflow(CI/CD)
+- yamaha config CI/CD
+
+## slack からの API 自動化フロー(IF: http/slack/hogehoge/... を slack に集約できる)
 
 ```bash
 slack
@@ -14,7 +25,7 @@ slack/kintone
 -> jira api
 ```
 
-# ドキュメント管理
+## ドキュメント管理
 
 ```bash
 docmentbranch - workbranch
@@ -23,7 +34,7 @@ docmentbranch - workbranch
 - workbranch で作業をする
 - documentbranch へ PR を送る
 
-# デプロイ自動化(NW コンフィグ設定やら IaC やら)
+## デプロイ自動化(NW コンフィグ設定やら IaC やら)
 
 ```bash
 deploybranch - workbranch
@@ -33,24 +44,28 @@ deploybranch - workbranch
 - deploybranch へ PR
 - 承認されると自動デプロイ
 
-# 生成 UI(Azure API over chatgpt 3.5)を利用した slack bot
+## 生成 UI(Azure API over chatgpt 3.5)を利用した slack bot
 
 api 経由でないと chatgpt 使えないし作りましょう
 
-# 勉強
+## 勉強
 
-- https://zenn.dev/tmknom/articles/github-apps-token
-- https://developers.bookwalker.jp/entry/2023/03/15/110000
-- https://tech.ginco.io/post/ginco-engineer-meetup-2018-cloud-functions/#cold-start%E3%81%AE%E6%94%B9%E5%96%84
-- https://blog.g-gen.co.jp/entry/using-terraform-via-github-actions
-- https://getbetterdevops.io/google-cloud-functions-with-terraform/
+- <https://zenn.dev/tmknom/articles/github-apps-token>
+- <https://developers.bookwalker.jp/entry/2023/03/15/110000>
+- <https://tech.ginco.io/post/ginco-engineer-meetup-2018-cloud-functions/#cold-start%E3%81%AE%E6%94%B9%E5%96%84>
+- <https://blog.g-gen.co.jp/entry/using-terraform-via-github-actions>
+- <https://getbetterdevops.io/google-cloud-functions-with-terraform/>
 
-# slack 2nd generation platform
+## slack 2nd generation platform
 
 slack deploy だけで typescript をデプロイ可能
 
-- https://api.slack.com/automation/cli/CI-CD-setup
+- <https://api.slack.com/automation/cli/CI-CD-setup>
 
 どうやら slack app の trigger がいろいろあるらしい
 その中でも event trigger の app_mensioned を理よすると @myapp とかで workflow がスタートする
 webhook や Link、schedule などもある
+
+## やること
+
+あ
