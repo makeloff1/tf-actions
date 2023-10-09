@@ -4,7 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-slack-bolt = "*"
+slack-bolt = "==1.18.0"
+gunicorn = "==21.2.0"
 
 [dev-packages]
 
