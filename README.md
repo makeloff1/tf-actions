@@ -8,6 +8,7 @@
 - gke with terraform
 - gke with terraform and actionflow(CI/CD)
 - yamaha config CI/CD
+- create slack app
 
 ## slack からの API 自動化フロー(IF: http/slack/hogehoge/... を slack に集約できる)
 
@@ -55,6 +56,8 @@ api 経由でないと chatgpt 使えないし作りましょう
 - <https://tech.ginco.io/post/ginco-engineer-meetup-2018-cloud-functions/#cold-start%E3%81%AE%E6%94%B9%E5%96%84>
 - <https://blog.g-gen.co.jp/entry/using-terraform-via-github-actions>
 - <https://getbetterdevops.io/google-cloud-functions-with-terraform/>
+- <https://engineering.nifty.co.jp/tag/slack>
+- <https://engineering.nifty.co.jp/blog/18967>
 
 ## slack 2nd generation platform
 
