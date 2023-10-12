@@ -1,0 +1,17 @@
+self-hosted
+gcp secret manager -> base64でエンコードしたusername,passwordを登録
+
+これやりたいけど、パスワードをどう渡すのか
+・https://kubernetes.io/ja/docs/tasks/inject-data-application/distribute-credentials-secure/
+・https://zenn.dev/xknzw/articles/0d1dc1abb1a3e2
+・BuildKit: RUN --mount=type=secret
+
+workflow "docker-branch"
+ - docker build & push
+   - python39 install
+   --mount-type=secret でgcp secret managerから取得した値を渡す
+ - ビルド成功した場合、上記docker imageでcloud-runのコンテナを立てる
+
+workflow "dispatch-branch"
+ - docker container内で以下の動作
+    - curl with base auth(secret)
