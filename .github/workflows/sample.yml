@@ -1,0 +1,14 @@
+name: Hello World
+
+on:
+  workflow_dispatch:
+    inputs:
+      scheduled_time:
+        description: "Scheduled time (in UTC)"
+        required: true
+
+jobs:
+  say_hello:
+    runs-on: self-hosted
+    steps:
+      - run: echo "Hello World!"

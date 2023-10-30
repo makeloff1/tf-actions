@@ -12,6 +12,14 @@ workflow "docker-branch"
    --mount-type=secret でgcp secret managerから取得した値を渡す
  - ビルド成功した場合、上記docker imageでcloud-runのコンテナを立てる
 
+これだと結局、cloud-runへの無認証でjiraにアクセスできてしまうため、cloud-run apiへの認証+制限が必要
+-> cloud load balancerでIP制限
+-> SSL証明書とか考えると結構面倒
+-> 下でいいや
+
 workflow "dispatch-branch"
  - docker container内で以下の動作
+    - python39 curl.py
     - curl with base auth(secret)
+
+    secretはgcp secret managerから取得した値を渡す
